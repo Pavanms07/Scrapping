@@ -1,0 +1,49 @@
+Procedure to complete Scrapp Project:
+
+Aim: Scrapping data from URl and Stored into Database
+
+Requirements:
+
+Softwares:									Tools:
+Python->DataFrames,BeautifulSoup					Jupyter Notebook
+MySQL-->SQL,Table								VS Code,DataBricks
+Sheets-->CSV,JSON,Excel etc						MySQL Workbench
+
+
+
+Python:
+
+1.Set Url
+2.Go to View page source/Inspect of url's
+3.Use Beautiful soup if Python
+4.Requrest url by request package and convert into text format
+3.Find required attributes using tags/search (Cntrl+f)
+4.Add those tags and child tags-->This will fetch our needed requirements
+5.Apply loop for continuous fetch till last data and append to new list 
+6.Convert new_list to DataFrames
+7.Apply column and index names
+8.Save it any format like excel,json,csv etc
+9.Once it complete verify data which fetched or not .
+10.Done
+
+
+MYSQL:
+1.Once Format sheet prepared ,Use MySQL to save data in database
+2.Create new DataBase for a task then create Table ,make sure Columns are most match else can't figure it out
+3.Use import wizard service 
+4.This will help to table to load multiple data at a time
+5.After this refresh table you will get your data into table.
+
+Challenges in Task:
+1.Finding data presents in HTML Tags ,class and Search
+2.Transformation in data to Dataframes
+3.While Creation tables while creating columns and data types
+	ex:Column is string of data and defined as varchar(30),Some time data will reached 100 so kept that as 200
+		else data could be chances of lost while loading table {actual 200 data ,received 197]
+databse.py:
+This will help us to check data in database via python query
+In this configured database.tables to python(Connections)
+calling query using cursor
+
+run -->pip freeze > requirements. txt 
+This will create auto requirements of task
